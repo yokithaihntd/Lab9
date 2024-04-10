@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="Lab9.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Lab9"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="Gray">
+        <NavigationView x:Name="NavView" IsBackButtonVisible="Collapsed" SelectionChanged="NavigationView_SelectionChanged">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Icon="ContactInfo" Content="Films" Tag="Films"/>
+                <NavigationViewItem Icon="AddFriend" Content="Add film" Tag="AddFilm"/>
+                <NavigationViewItem Icon="Calculator" Content="Statistics" Tag="Stats"/>
+            </NavigationView.MenuItems>
+            <Frame x:Name="ContentFrame" />
+        </NavigationView>
+    </Grid>
+</Page>
